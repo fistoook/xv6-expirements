@@ -1,23 +1,27 @@
-Man, the look on my face after I did this 
+# Adding a System Call to xv6
 
-> cd xv6
-> ls
+Man, the look on my face after running this for the first time:
 
-for the first, was kind like the one when you run and your right side starts hurtning
+```bash
+cd xv6
+ls
+```
 
-Man I  can't stand that :)
+Kind of like when you’re running and your right side starts hurting.
 
-But after some time, and, admittedly, too many chatGPT prompts of "exlain this now." 
-followed by even more questions that arouse from the inevitable wall of enedless text 
+Man, I can’t stand that :)
 
-I think I might have an idea what some of thie mean.
+But after some time—and, admittedly, too many ChatGPT prompts of
+“explain this now,” followed by even more questions arising from the
+inevitable wall of endless text—I think I might have an idea what
+some of these files do.
 
-My biggest realization? Operating Systems are pretty damn fun
+My biggest realization? **Operating systems are pretty damn fun.**
 
-So fun that I made a video about how to add a system call to xv6 :)
+So fun that I made a video about adding a system call to xv6 :)
 
-you can check it out here :)
+**[Watch the walkthrough →](YOUR_YOUTUBE_VIDEO_URL)**
 
-here’s a flowchart 
+And here’s a flowchart if you don’t want to hear me yapping :)
 
 ![The xv6 system-call flow, with each file’s role](docs/xv6-system-call-flow.svg)
