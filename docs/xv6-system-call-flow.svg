@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="910" viewBox="0 80 1000 910" role="img" aria-labelledby="title desc">
+<title id="title">Adding a system call to xv6: the files and their roles</title>
+<desc id="desc">The user interface declaration, assembly stub, trap entry, dispatcher, and kernel implementation. The ps.c command calls the usys.S stub. Supporting build-time files are described in the README.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#F0DEC2" stroke-width="1.5"/></marker><marker id="green-arrow" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#B6BA32" stroke-width="1.5"/></marker></defs>
+<rect x="0" y="80" width="1000" height="910" fill="#121211"/>
+<style>text{font-family:Consolas,ui-monospace,monospace;fill:#F0DEC2}.role{font-size:31px;fill:#B7AA95}.file{font-size:40px}.small{font-size:25px;fill:#B7AA95}.heading{font-size:32px;letter-spacing:-.5px}.green{fill:#B6BA32}</style>
+<path d="M300 100 C521.667 97 743.333 103 965 100 L965 185 C743.333 182 521.667 187 300 185 Z" fill="#151512" stroke="#F0DEC2" stroke-width="2.5"/>
+<text x="319" y="139" class="file">user.h</text>
+<text x="319" y="176" class="role">declare ps()</text>
+<path d="M300 212 C521.667 209 743.333 215 965 212 L965 297 C743.333 294 521.667 299 300 297 Z" fill="#151512" stroke="#F0DEC2" stroke-width="2.5"/>
+<text x="319" y="251" class="file">usys.S</text>
+<text x="319" y="288" class="role">load SYS_ps; int $64</text>
+<path d="M630 188 L630 208" stroke="#F0DEC2" stroke-width="2.5" stroke-dasharray="5 6" marker-end="url(#arrow)"/>
+<path d="M300 324 C521.667 321 743.333 327 965 324 L965 409 C743.333 406 521.667 411 300 409 Z" fill="#151512" stroke="#F0DEC2" stroke-width="2.5"/>
+<text x="319" y="363" class="file">vectors.S</text>
+<text x="319" y="400" class="role">generated trap entry</text>
+<path d="M630 300 L630 320" stroke="#F0DEC2" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M300 436 C521.667 433 743.333 439 965 436 L965 521 C743.333 518 521.667 523 300 521 Z" fill="#151512" stroke="#F0DEC2" stroke-width="2.5"/>
+<text x="319" y="475" class="file">trapasm.S</text>
+<text x="319" y="512" class="role">save the trap frame</text>
+<path d="M630 412 L630 432" stroke="#F0DEC2" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M300 548 C521.667 545 743.333 551 965 548 L965 633 C743.333 630 521.667 635 300 633 Z" fill="#151512" stroke="#F0DEC2" stroke-width="2.5"/>
+<text x="319" y="587" class="file">trap.c</text>
+<text x="319" y="624" class="role">recognize T_SYSCALL</text>
+<path d="M630 524 L630 544" stroke="#F0DEC2" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M300 660 C521.667 657 743.333 663 965 660 L965 745 C743.333 742 521.667 747 300 745 Z" fill="#151512" stroke="#F0DEC2" stroke-width="2.5"/>
+<text x="319" y="699" class="file">syscall.c</text>
+<text x="319" y="736" class="role">dispatch by EAX</text>
+<path d="M630 636 L630 656" stroke="#F0DEC2" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M300 772 C521.667 769 743.333 775 965 772 L965 857 C743.333 854 521.667 859 300 857 Z" fill="#151512" stroke="#F0DEC2" stroke-width="2.5"/>
+<text x="319" y="811" class="file">sysproc.c</text>
+<text x="319" y="848" class="role">sys_ps() wrapper</text>
+<path d="M630 748 L630 768" stroke="#F0DEC2" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M300 884 C521.667 881 743.333 887 965 884 L965 969 C743.333 966 521.667 971 300 969 Z" fill="#151512" stroke="#F0DEC2" stroke-width="2.5"/>
+<text x="319" y="923" class="file">proc.c</text>
+<text x="319" y="960" class="role">implement ps()</text>
+<path d="M630 860 L630 880" stroke="#F0DEC2" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M31 212 C106.333 209 181.667 215 257 212 L257 297 C181.667 294 106.333 299 31 297 Z" fill="#151512" stroke="#B6BA32" stroke-width="2.5"/>
+<text x="52" y="251" class="file green">ps.c</text>
+<text x="52" y="288" class="role">call ps()</text>
+<path d="M258 254 L294 254" stroke="#B6BA32" stroke-width="2.5" marker-end="url(#green-arrow)"/>
+</svg>
