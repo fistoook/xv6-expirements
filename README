@@ -1,10 +1,23 @@
-The code in this repo is MIT's xv6 x86-32 implmentation that is deprecated.
+Man, the look on my face after I did this 
 
-The goal is playing around with it and learning Operating Systems - hands on.
+> cd xv6
+> ls
 
-Currently there is one change that I have done: The ps command, and the system call for it.
+for the first, was kind like the one when you run and your right side starts hurtning
 
-If you are wondering how you can add your system calls to xv6 - you can check it out here:
+Man I  can't stand that :)
 
+But after some time, and, admittedly, too many chatGPT prompts of "exlain this now." 
+followed by even more questions that arouse from the inevitable wall of enedless text 
 
-:)
+I think I might have an idea what some of thie mean.
+
+My biggest realization? Operating Systems are pretty damn fun
+
+So fun that I made a video about how to add a system call to xv6 :)
+
+you can check it out here :)
+
+here’s a flowchart 
+
+![The xv6 system-call flow, with each file’s role](docs/xv6-system-call-flow.svg)
