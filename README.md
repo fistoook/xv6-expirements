@@ -20,7 +20,7 @@ My biggest realization? **Operating systems are pretty damn fun.**
 
 So fun that I made a video about adding a system call to xv6 :)
 
-**[Watch the walkthrough →](YOUR_YOUTUBE_VIDEO_URL)**
+**[Watch the walkthrough →](https://youtu.be/C41XSNBD6Mg)**
 
 And here’s a flowchart if you don’t want to hear me yapping :)
 
